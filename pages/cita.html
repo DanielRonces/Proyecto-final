@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaqueline´s Salon</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="contenedorCita">
+    <header id="header">
+        <!--Reservado para una imagen carrussel-->
+        <a href="../index.html"><img id="imgHeader" src="../img/logo.png" alt=""></a>
+    </header>
+
+    <!--Inicia navegacion-->
+    <section id="nav">
+        <nav class="botonera">
+            <ol>
+                <li><a href="#">Servicios</a>
+                    <ol>
+                        <li><a href="extension.html">Extension de pestañas</a></li>
+                        <li><a href="microbalding.html">Microbalding</a></li>
+                        <li><a href="manicure.html">Pedicure y manicure</a></li>
+                    </ol>
+                </li>
+                <li><a href="pages/cita.html">Citas</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+            </ol>
+        </nav>
+    </section>
+
+    <main>
+        <!--Inicia formulario-->
+        <section class="formulario" id="formulario">
+            <h2 class="titulo">Agenda una cita</h2>
+            <fieldset>
+                <legend class="subtitulo">Datos personales</legend>
+                <label class="textos" for="nombre">Nombre: </label>
+                <input type="text" placeholder="Nombre y apellido">
+                <label class="textos" for="correo">Ingresa tu correo electronico: </label>
+                <input type="text" placeholder="Correo">
+                <label class="textos" for="celular">Telefon celular: </label>
+                <input type="tel" placeholder="Telefono celular">
+                <label class="textos" for="telefono">Telefono local: </label>
+                <input type="tel" placeholder="Telefono local">
+            </fieldset>
+            <fieldset>
+                <legend class="subtitulo">Fecha y hora</legend>
+                <label class="textos" for="fecha">Selecciona una fecha: </label>
+                <input type="date">
+                <label class="textos" for="hora">Selecciona un horario: </label>
+                <select name="hora" id="hora">
+                    <option value="hora">9:00</option>
+                    <option value="hora">10:00</option>
+                    <option value="hora">11:00</option>
+                    <option value="hora">12:00</option>
+                    <option value="hora">13:00</option>
+                    <option value="hora">14:00</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend class="subtitulo">Tipo de servicio</legend>
+                <label class="textos" for="Servicio">Seleciona uno o mas servicios: </label>
+                <label class="textos" for="servicio">Extension de pestanas</label>
+                <input type="checkbox">
+                <label class="textos" for="servicio">Microbalding</label>
+                <input type="checkbox">
+                <label class="textos" for="servicio">Manicure y pedicure</label>
+                <input type="checkbox">
+                <label class="textos" for="tipo">Tipo de servicio: </label>
+                <label class="textos" for="domicilio">A domicilio</label>
+                <input type="radio" name="domicilio" id="domicilio" value="domicilio">
+                <label class="textos" for="salon">En salon</label>
+                <input type="radio" name="salon" id="salon" value="salon">
+            </fieldset>
+            <fieldset>
+                <legend class="subtitulo">Comentarios</legend>
+                <input type="text">
+            </fieldset>
+        </section>
+        <!--Fin del formulario-->
+    </main>
+
+        <!--Inicia Aside-->
+    <aside id="aside" class="recomendaciones">
+        <h2 class="titulo">Recomendaciones para tu cita</h2>
+        <ul>
+            <li class="textos">Lorem ipsum dolor sit, amet consectetur </li>
+            <li class="textos">Lorem ipsum dolor sit, amet consectetur </li>
+            <li class="textos">Lorem ipsum dolor sit, amet consectetur </li>
+            <li class="textos">Lorem ipsum dolor sit, amet consectetur </li>
+            <li class="textos">Lorem ipsum dolor sit, amet consectetur </li>
+            <li class="textos">Lorem ipsum dolor sit, amet consectetur </li>
+        </ul>
+    </aside>
+
+    <section id="mapa">
+        <h2 class="titulo">Nuestra ubicación</h2>
+        <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15034.34477687244!2d-99.2673792!3d19.60222125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1647474626385!5m2!1ses-419!2smx"></iframe>
+    </section>
+
+    <!--Inicia footer-->
+
+    <footer class="footer" id="footer">
+        <a href="facebook.com"><img id="imgFooter" src="../img/facebook.png" alt="Facebook"></a>
+        <a href="facebook.com"><img id="imgFooter" src="../img/instagram.png" alt="Instagram"></a>
+        <a href="facebook.com"><img id="imgFooter" src="../img/tiktok.png" alt="Tiktok"></a>
+    </footer>
+</body>
+</html>
