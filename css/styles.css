@@ -35,7 +35,7 @@ html{
 
 /*Clases para navegacion*/
 .botonera{
-    background-color: black;
+    background: linear-gradient(to right, black, rgb(37, 37, 37));
     top: 0%;
     position: sticky;
     width: 100%;
@@ -57,12 +57,13 @@ html{
             .botonera ol li:hover ol{
                 display: flex;
                 flex-direction: column;
-                background-color: grey;
+                background: linear-gradient(to right, black, rgb(37, 37, 37));
+                transition: all 2s;
             }
 
         .botonera a{ 
             text-decoration: none;
-            color:aliceblue;
+            color:white;
             font-family: 'Permanent Marker', cursive;
             font-size: 1em;
         }
@@ -106,9 +107,10 @@ html{
     flex-direction: column;
     justify-content: space-evenly;
     padding: 2em auto;
-    background-color: grey;
+    background: radial-gradient(circle, grey, black);
     margin: 2em auto;
     border-radius: 10%;
+    color: white;
 }
 
 /*Footer*/
@@ -129,13 +131,14 @@ html{
 
 /*Boton utilizado en todo el sitio*/
 #boton{
-    background-color: grey;
+    /*background-color: grey;*/
+    background: radial-gradient(circle, grey, black);
     text-decoration: none;
-    color: white;
+    color: black;
     margin: 1rem auto;
     padding: 1rem 3rem;
     box-sizing: border-box;
-    border-radius: 10%;
+    border-radius: 2%;
 }
 
 /*Imagen con el logo en el header*/
@@ -333,8 +336,9 @@ html{
     text-decoration: none;
     margin: 0.2rem auto;
     padding: 0.2rem 5rem;
-    border-radius: 5%;
-    background-color: grey;
+    border-radius: 2%;
+    background: radial-gradient(circle, grey, black);
+    text-decoration: none;
     color: black;
 }
 
@@ -461,6 +465,10 @@ html{
         align-items: center;
     }
 
+.figureServicioBg{
+    background-color: black;
+}
+
 .containtServicio{
     display: grid;
     grid-template-columns: 1fr;
@@ -516,6 +524,9 @@ html{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 1rem 2rem;
+    padding: 1rem auto;
+    background: radial-gradient(darkgrey, black);
 }
 
 .contenedorNosotros{
@@ -560,4 +571,58 @@ html{
     #historia{
         grid-area: historia;
     }
+}
+
+/*------- Animaciones ---------*/
+
+.scaleProductos:hover{
+    transform: scale(1.01);
+	cursor: pointer;
+	transition: all 1s;
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+#boton:hover{
+    color: white;
+    transition: all 1.5s;
+    transform: scale(1.01);
+	cursor: pointer;
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.botonera a:hover{
+    color: grey;
+    transition: all 2s;
+}
+
+footer a:hover{
+    transform: scale(1.5);
+	cursor: pointer;
+	transition: all 1s;
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.nosotrosBox:hover{
+    transform: scale(1.1);
+	cursor: pointer;
+	transition: all 1s;
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+#botonProductos:hover{
+    color: white;
+    transition: all 1.5s;
+    transform: scale(1.01);
+	cursor: pointer;
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
