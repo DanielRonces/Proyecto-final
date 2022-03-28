@@ -6,7 +6,7 @@
 	box-sizing: border-box;
 }
 
-html{
+body{
     background: linear-gradient(to right, black, rgb(37, 37, 37));
 }
 
@@ -36,14 +36,17 @@ html{
 /*Clases para navegacion*/
 .botonera{
     background: linear-gradient(to right, black, rgb(37, 37, 37));
-    top: 0%;
+    /*top: 0%;
     position: sticky;
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;*/
 }
 
-    .botonera ol{
+    .botonera a{
+        color: white;
+    }
+    /*.botonera ol{
         display: flex;
         justify-content: space-evenly;
         list-style: none;
@@ -68,7 +71,7 @@ html{
             font-size: 1em;
         }
 
-
+*/
 /*Seccion de servicios en index*/
 .servicios{
     width: 90%;
