@@ -31,7 +31,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
             </li>
@@ -66,7 +66,54 @@
     <!--Inicia formulario-->
     <section class="formulario" id="formulario">
       <h2 class="titulo">Agenda una cita</h2>
-      <fieldset>
+      <form class="row g-3 subtitulo p-3">
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Nombre</label>
+          <input type="email" class="form-control" id="inputEmail4">
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Telefono</label>
+          <input type="password" class="form-control" id="inputPassword4">
+        </div>
+        <div class="col-12">
+          <label for="inputAddress" class="form-label">E-mail</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">Servicio</label>
+          <select id="inputState" class="form-select">
+            <option selected>Elige uno...</option>
+            <option>Extension de pestañas</option>
+            <option>Microbalding</option>
+            <option>Manicure</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <label for="inputZip" class="form-label">Fecha</label>
+          <input type="date" class="form-control" id="inputZip">
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">Hora</label>
+          <select id="inputState" class="form-select">
+            <option selected>Elige un horario...</option>
+            <option value="hora">9:00</option>
+          <option value="hora">10:00</option>
+          <option value="hora">11:00</option>
+          <option value="hora">12:00</option>
+          <option value="hora">13:00</option>
+          <option value="hora">14:00</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Dejanos un comentario</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn" id="boton">Agendar</button>
+        </div>
+      </form>
+
+      <!--<fieldset>
         <legend class="subtitulo">Datos personales</legend>
         <label class="textos" for="nombre">Nombre: </label>
         <input type="text" placeholder="Nombre y apellido">
@@ -105,11 +152,7 @@
         <input type="radio" name="domicilio" id="domicilio" value="domicilio">
         <label class="textos" for="salon">En salon</label>
         <input type="radio" name="salon" id="salon" value="salon">
-      </fieldset>
-      <fieldset>
-        <legend class="subtitulo">Comentarios</legend>
-        <input type="text">
-      </fieldset>
+      </fieldset>-->
     </section>
     <!--Fin del formulario-->
   </main>
